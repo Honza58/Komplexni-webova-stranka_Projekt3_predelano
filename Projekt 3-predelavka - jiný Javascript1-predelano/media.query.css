@@ -1,0 +1,285 @@
+@media (max-width: 400px) {
+  .pictures {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 30px;
+  }
+
+  .picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  form {
+    width: 65%;
+    margin-top: 15px;
+    font-size: 70%;
+    margin: auto;
+  }
+
+  .form1,
+  .form2 {
+    width: 100%;
+  }
+
+  .valid, .invalid {
+    font-size: 80%;
+  }
+
+  h1 {
+    font-size: 80%;
+  }
+
+  .footer {
+    font-size: 90%;
+  }
+
+  .footer-copy {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 400px) {
+  .pictures {
+    display: flex;
+    align-items: flex-end;
+    gap: 5px;
+    margin-bottom: 30px;
+  }
+
+  .picture {
+    width: 190px;
+    height: 150px;
+  }
+
+  form {
+    width: 70%;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 80%;
+  }
+
+  .valid, .invalid {
+    font-size: 85%;
+  }
+
+  h1 {
+    font-size: 90%;
+  }
+
+  .footer {
+    font-size: 90%;
+  }
+
+  .footer-copy {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 576px) {
+.header {
+  height: 220px;
+}
+
+  .hamburger-menu {
+    display: none !important; /*skrývá ikonu hamburger menu určenou pro rozbalování navigační nabídky*/
+  }
+
+  .hamburger-menu-light {
+    display: none !important; /*skrývá ikonu hamburger menu určenou pro rozbalování navigační nabídky*/
+  }
+
+  .cross-menu {
+    display: none !important; /*skrývá ikonu hamburger menu určenou pro rozbalování navigační nabídky*/
+  }
+
+  .menuNav {
+    display: block;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    font-size: 85%;
+    background-color: rgba(0, 0, 0, 0); /*nastavuje průhlednost navigačního menu*/
+    margin: 40px auto;
+    color: var(--menu-nav);
+  }
+
+  .menuNavLight {
+    display: block;
+    position: absolute;
+    top: 80px;
+    width: 100%;
+    height: 30px;
+    padding: 0px;
+    font-size: 85%;
+    background-color: rgba(0, 0, 0, 0); /*nastavuje průhlednost navigačního menu*/
+    margin: 40px auto;
+    color: var(--menu-nav);
+  }
+
+  .menuli {
+    display: inline-block;
+    margin: 0px !important; /*nuluje margin*/
+    width: 16%;
+  }
+
+  .paragraph {
+    font-size: 80%;
+  }
+
+  .paragraph-light {
+    font-size: 80%;
+  }
+
+  .picture {
+    width: 200px;
+    height: 180px;
+  }
+
+  form {
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    display: flex;
+    font-size: 80%;
+  }
+
+  .form1,
+  .form2 {
+    width: 50%;
+  }
+
+  .valid, .invalid {
+    font-size: 85%;
+  }
+
+  .underfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .icons-facebook-twitter {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 960px) {
+  form {
+    max-width: 400px;
+  }
+
+  .picture {
+    width: 250px;
+    height: 230px;
+  }
+
+  .footer {
+    font-size: 100%;
+  }
+
+  .underfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .undermain {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    margin: 100px 20px 20px 20px;
+  }
+
+  .header {
+    height: 210px;
+  }
+
+  h1 {
+    font-size: 110%;
+  }
+
+  .menuNav {
+    font-size: 95%;
+  }
+
+  .paragraph {
+    font-size: 95%;
+  }
+
+  .paragraph-light {
+    font-size: 95%;
+  }
+
+  form {
+    max-width: 50%;
+    height: 80%;
+    margin: 15px 10px;
+  }
+
+  .form1,
+  .form2 {
+    width: 50%;
+  }
+
+  .valid, .invalid {
+    font-size: 80%;
+  }
+  .pictures {
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+  }
+
+  .picture {
+    width: 220px;
+    height: 200px;
+  }
+
+  .footer {
+    font-size: 100%;
+  }
+
+  .footer-copy {
+    font-size: 100%;
+  }
+
+  .underfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .icons-facebook-twitter {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 130%;
+  }
+
+  menuNav {
+    font-size: 105%;
+  }
+
+  .paragraph {
+    font-size: 100%;
+  }
+
+  .paragraph-light {
+    font-size: 100%;
+  }
+
+  .menuNav {
+    font-size: 110%;
+  }
+}
