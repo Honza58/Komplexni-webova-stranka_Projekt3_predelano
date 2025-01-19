@@ -1,0 +1,20 @@
+{
+    "source": {
+      "include": ["."],
+      "includePattern": ".+\\.js(doc|x)?$"
+    },
+    "opts": {
+      "destination": "./docs",
+      "recurse": false,
+      "template": "templates/default"
+    },
+    "plugins": [
+      "plugins/markdown"
+    ],
+    "templates": {
+      "cleverLinks": true,
+      "default": {
+       "outputSourceFiles": true
+      }
+    }
+  }
