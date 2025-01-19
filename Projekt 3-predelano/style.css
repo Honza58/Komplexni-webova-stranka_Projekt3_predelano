@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --dark-color: #1f1720;
+  --bkg-body: #ffffff;
+  --bkg-dark-mode: #1f1720; /*ikona light mod*/
+  --bkg-undermain: #ffffff; /*pozadí form+pictures*/
+  --form: #1f1720; /*formulář rámeček*/
+  --dark-footer: #1f1720;
+  --fonts-footer: #faebd7;
+  --nav-from-dark: #1f1720;
+}
+
+.dark-theme {
+  --dark-color: #ffffff;
+  --bkg-dark-mode: #1f1720; /*ikona light mod*/
+  --bkg-undermain: #1f1720; /*pozadí form+pictures*/
+  --form: #ffffff; /*formulář rámeček*/
+  --form-fonts: #ffffff;
+  --bkg-body: #1f1720;
+  --nav-from-dark: #1f1720;
+  --menu-nav: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: Poppins, Arial, sans-serif;
+  position: relative;
+  background-color: var(--bkg-body);
+}
+
+body {
+  max-width: 960px;
+  margin: auto;
+}
+
+.main {
+  padding: 15px 0 0 0;
+  position: relative;
+}
+
+.header {
+  position: relative;
+  margin: 0px 29px 15px 29px;
+  padding: 5px 0px 20px 5px;
+  border-bottom: 2px solid var(--dark-color);
+  height: 130px;
+}
+
+h1 {
+  text-align: center;
+  width: 50%;
+  margin: 25px auto;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 100%;
+  color: var(--dark-color);
+  box-shadow: 3px 3px 7px 0px var(--dark-color);
+}
+
+
+/* ---navigace--- */
+
+.hamburger-menu {
+  display: none;
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.hamburger-menu-light {
+
+  width: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.cross-menu {
+  display: none;
+  position: absolute;
+  top: 9px;
+  right: 8px;
+  cursor: pointer;
+  z-index: 2;
+
+}
+
+ nav {
+  display: none;
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 810px;
+  text-align: center;
+  background-color: #1f1720;
+  color: #ffffff;
+  z-index: 1;
+} 
+
+li {
+  list-style-type: none;
+  margin: auto;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  width: 80%;
+}
+
+.menuli {
+  list-style-type: none;
+  margin: auto;
+  margin-top: 30px;
+  padding-bottom: 5px;
+  width: 126px;
+}
+
+li a {
+  color: var(--h1a);
+  text-decoration: none;
+}
+
+
+/* ---efekt po najetí kurzorem na jednotlivé items v navigačním menu--- */
+
+ .menuNav .introduction::after,
+ .menuNav .menuli::after {
+  content: "";
+  display: block;
+  border-bottom: 1px solid rgb(148, 146, 146);
+  margin: auto;
+  width: 0px;
+  margin-top: 3px;
+  transition: all 1s ;
+}
+ .introduction:hover::after,
+ .menuli:hover::after {
+  width: 60px;
+}
+
+.nightTableLine:hover::after,
+.ironFurnitureLine:hover::after {
+  width: 100px;
+}
+
+/* ---konec kódu pro efekt po najetí kurzorem na menu navigaci----- */
+
+
+/* ---light,dark modes--- */
+
+.mode-light,
+.mode-dark {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 24px;
+  box-shadow: 0px 0px 5px 0px rgba(94, 94, 94, 0.596);
+  cursor: pointer;
+}
+
+.img-mode-light,
+.img-mode-dark {
+  width: 100%;
+  height: 100%;
+}
+
+.mode-light {
+  display: block;
+  padding: 3px;
+  border-radius: 50%;
+}
+
+.mode-dark {
+  display: none;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.undermain {
+  border-bottom: 2px solid #ffffff;
+  margin: 3px 30px 20px 30px;
+  padding-bottom: 35px;
+  background-color: var(--bkg-undermain);
+}
+
+
+/* ---třídy pro ovládání stylů elementů v html přes Javascript */
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+
+/* ---paragraph--- */
+
+.paragraph {
+  margin: 30px;
+  text-align: justify;
+  color: var(--dark-color);
+  margin: 30px;
+  font-size: 80%;
+}
+
+.paragraph-light {
+  color: var(--dark-color);
+  text-align: justify;
+  margin: 30px;
+  font-size: 80%;
+}
+
+
+/* ---pictures--- */
+
+.pictures {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.picture {
+  width: 115px;
+  height: 120px;
+  transition: all 2s;
+}
+
+.picture:hover {
+transform: scale(1.35); /* po najetí kurzoru dojde k plynulému zvětšení obrázku*/
+}
+
+.picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+
+/* ---form--- */
+
+.form {
+  border: 2px solid var(--dark-color);
+  margin-top: 15px;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 90%;
+}
+
+.form1, .form2 {
+  margin: 5px;
+}
+
+.psc {
+  margin-right: 13px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  font-size: 100%;
+  width: 90%;
+  height: 25px;
+}
+
+.form-item {
+  margin: 10px;
+  color: var(--form-fonts);
+}
+
+.button {
+  margin-top: 10px;
+  max-width: 55px;
+  font-size: 90%;
+  cursor: pointer;
+}
+
+
+/* ---třídy pro shodu emailu a hesla---- */
+.valid {
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+  }
+
+.invalid { 
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.formValid {
+  color: green;
+  font-weight: bold;
+}
+
+
+/* ---footer--- */
+
+.footer {
+  padding-top: 20px;
+  background-color: var(--dark-footer);
+}
+
+.underfooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px 5px 10px;
+}
+
+h3 {
+  margin: 20px 0 15px 20px;
+  color: var(--fonts-footer);
+  text-align: center;
+  font-size: 95%;
+}
+
+.allAboutBuy ul li {
+  list-style-type: circle;
+  margin: 5px 0 5px 30px;
+  font-size: 80%;
+  color: var(--fonts-footer);
+}
+
+.contact ul li {
+  list-style-type: circle;
+  margin: 5px 0 0 40px;
+  font-size: 80%;
+  color: var(--fonts-footer);
+  padding: 0;
+}
+
+.contact p {
+  list-style-type: circle;
+  margin: 3px 0 5px 40px;
+  font-size: 80%;
+  color: var(--fonts-footer);
+  width: 100%;
+}
+
+.linkEmail {
+  color: #ffffff;
+}
+
+.map {
+  margin: 10px 0 0 20px;
+}
+
+.contact .contactEmailPhone {
+  list-style-type: none;
+  margin: 13px 0 0 18px;
+  text-align: left;
+}
+
+.footer-li {
+  margin: 0px;
+}
+
+h4 {
+  margin: 5px 0px 5px 0px;
+}
+
+.footer-icon-phone,
+.footer-icon-email {
+  vertical-align: middle;
+  margin: 5px;
+}
+
+.icons-facebook-twitter {
+  margin: 10px 0px 0px 20px;
+}
+
+
+.footer-copy {
+  text-align: center;
+  color: var(--fonts-footer);
+  padding: 12px 0 12px 0;
+  background-color: #1e1c20;
+}
+
+/* ---ikona šipky pro vyjetí stránky nahoru */
+
+.arrow-up-big {
+  position: fixed;
+  right: 10px;
+  bottom: 5px;
+  cursor: pointer;
+}
+
+
